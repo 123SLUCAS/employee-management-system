@@ -1,4 +1,3 @@
-@@ -0,0 +1,24 @@
 pipeline {
     agent any
     tools {
@@ -19,6 +18,7 @@ pipeline {
             }
             steps {
                 sh "mvn package -DskipTests"
+                sh "ls -l target/"
             }
         }
     }
